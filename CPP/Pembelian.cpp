@@ -65,19 +65,24 @@ class Pembelian{
             return this->metode_pembayaran;
         }
 
+        //mencari data pembelian berdasarkan nama atau email pembeli
         static void cariPembelian(vector<Pembelian> &daftar, string keyword){
-            bool ketemu = false;
+            //menandai apakah data ditemukan atau tidak
+            bool ketemu = false; 
             for(int i = 0; i < daftar.size(); i++){
+                //mengecek apakah nama atau email pembeli sesuai dengan keyword
                 if (daftar[i].getNama() == keyword || daftar[i].getEmail() == keyword) {
+                    //jika ditemukan, tampilkan detail data pembelian
                     cout << "\n=== Data Ditemukan ===\n";
                     cout << "Nama Pembeli : " << daftar[i].getNama() << endl;
                     cout << "Email Pembeli : " << daftar[i].getEmail() << endl;
                     cout << "List Barang :" << endl;
                     cout << daftar[i].getBarang();
                     cout << "Metode Pembayaran : " << daftar[i].getMetode() << endl;
-                    ketemu = true;
+                    ketemu = true; //set flag menjadi true karena data ditemukan
                 }
             }
+            //jika tidak ditemukan, tampilkan pesan tidak ditemukan
             if(!ketemu){
                 cout << "\nData dengan keyword \"" << keyword << "\" tidak ditemukan.\n";
             }
