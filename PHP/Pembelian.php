@@ -134,11 +134,11 @@ if (isset($_POST['edit'])) {
                 </tr>";
         foreach ($data as $i => $p) {
             echo "<tr>
-                    <td>".($i+1)."</td>                                         //tampilkan id
-                    <td>".htmlspecialchars($p['nama'])."</td>                   //tampilkan nama
-                    <td>".htmlspecialchars($p['email'])."</td>                  //tampilkan email
-                    <td>".htmlspecialchars($p['metode'])."</td>                 //tampilkan metode
-                    <td>".implode(', ', $p['barang'])."</td>                    //tampilkan daftar barang
+                    <td>".($i+1)."</td>                                        
+                    <td>".htmlspecialchars($p['nama'])."</td>                   
+                    <td>".htmlspecialchars($p['email'])."</td>                  
+                    <td>".htmlspecialchars($p['metode'])."</td>                 
+                    <td>".implode(', ', $p['barang'])."</td>                    
                     <td>";
             if ($p['foto']) {
                 echo "<img src='".$p['foto']."' width='80'>";                   //tampilkan foto jika ada
@@ -147,8 +147,8 @@ if (isset($_POST['edit'])) {
             }
             echo "</td>
                   <td>
-                    <a href='?hapus=$i'>Hapus</a> |                             //link hapus data
-                    <a href='?edit=$i'>Edit</a>                                //link edit data
+                    <a href='?hapus=$i'>Hapus</a> |                             
+                    <a href='?edit=$i'>Edit</a>                                
                   </td>
                 </tr>";
         }
