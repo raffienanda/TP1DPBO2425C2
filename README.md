@@ -20,6 +20,14 @@ CPP :
   Dokumentasi :
 
 Java :
-  menggunakan class pembelian dengan atribut privat juga.
+  menggunakan class pembelian dengan atribut privat juga (dengan atribut yang sama, kecuali vector).
+  untuk enkapsulasinya juga sama terdapat kostruktor, get, dan set.
+  semua data disimpan pada arraylist, arraylist juga sama bersifat dinamis seperti vector pada cpp.
+  untuk menu pada bahasa java sendiri juga menggunakan swicth case di dalam do while.
+
+  Dokumentasi :
+
+Python : 
+  
   
   
