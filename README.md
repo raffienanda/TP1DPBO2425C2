@@ -18,5 +18,8 @@ CPP :
   lalu untuk pemilihan pada menu disini saya menggunakan switch case di dalam do while
 
   Dokumentasi :
+
+Java :
+  menggunakan class pembelian dengan atribut privat juga.
   
   
