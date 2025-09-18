@@ -11,6 +11,8 @@ pada menu pembelian disini terdapat beberapa fitur, diantaranya yaitu.
 -Mencari data
 -Menambahkan gambar (khusus PHP)
 
+semua menu menggunakan opsi angka, yang dimana akan ada beberapa angka dengan pilihan. ketika angka diketik, maka akan menjalankan sesuai dengan pilihan.
+
 CPP : 
   menggunakan class Pembelian dengan atribut privat (nama_pembeli, email_pembeli, metode_pembayaran, vector<string> nama_barang)
   dengan menggunakan enkapsulasi data hanya dapat diakses lewat konstruktor, get, dan set.
